@@ -1,3 +1,4 @@
 const mongoose = require('mongoose')
+const url = process.env.MONGODB_URI || "mongodb://localhost:27017"
 
-mongoose.connect("mongodb://localhost:27017/CRUD-DB")
+mongoose.connect(url+"/heroku_7hgb85dk")
