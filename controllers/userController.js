@@ -32,7 +32,7 @@ const updateUser = (req, res) => {
         {
             return console.log(err)
         }
-        res.redirect("user/list")
+        res.redirect("list")
     });
 
 }
@@ -49,7 +49,7 @@ const InsertUser = (req, res, count) => {
             return console.log('Error during record insertion: ' + err)
         }
 
-        res.redirect('user/list')
+        res.redirect('list')
     })
 }
 
